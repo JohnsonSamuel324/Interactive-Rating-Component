@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+  </style>
+</head>
+<body>
+  <main>
+    <div class="rating-card">
+      <div class="rating-form">
+        <svg id="star-icon" width="17" height="16" xmlns="http://www.w3.org/2000/svg"><path d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z" fill="#FC7614"/></svg>
+        <h1>How did we do?</h1>
+        <p>Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
+        <div class="btn-container">
+          <button class="rating-btn" id="rating-1" type="button" onclick="selectRating(this.id)">1</button>
+          <button class="rating-btn" id="rating-2" type="button" onclick="selectRating(this.id)">2</button>
+          <button class="rating-btn" id="rating-3" type="button" onclick="selectRating(this.id)">3</button>
+          <button class="rating-btn" id="rating-4" type="button" onclick="selectRating(this.id)">4</button>
+          <button class="rating-btn" id="rating-5" type="button" onclick="selectRating(this.id)">5</button>
+        </div>
+        <button id="rating-submit" type="button" onclick="submitRating(this.id)">Submit</button>
+        </div>
+      <div class="thanks-container hidden">
+        <img id="thanks-img" src="./assets/images/illustration-thank-you.svg" alt="Thank you">
+        <p id="rating-summary">You selected x out of 5</p>
+        <h1>Thank you!</h1>
+        <p id="thanks-msg">We appreciate you taking the time to give a rating. It you ever need more support, don't hesitate to get in touch!</p>
+      </div>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">.Suspect</a>
+  </div>
+</body>
+<script src="./script.js"></script>
+</html>
